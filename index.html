@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Md. Adnan Hossain - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container header-content">
+            <div class="profile">
+                <img src="profile.jpg" alt="Md. Adnan Hossain" class="profile-img">
+                <div>
+                    <h1>Md. Adnan Hossain</h1>
+                    <p>Researcher | NLP | Machine Learning | Deep Learning | Computer Vision</p>
+                    <div class="profile-links">
+                        <a class="btn" href="Md Adnan Hossain_CV.pdf" download>Download CV</a>
+                        <a class="btn scholar" href="https://scholar.google.com/citations?user=YOUR_SCHOLAR_ID" target="_blank" rel="noopener">Google Scholar</a>
+                    </div>
+                </div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#research">Research</a></li>
+                    <li><a href="#study-background">Study Background</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#publications">Publications</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="about" class="container">
+            <h2>About Me</h2>
+            <p>
+                I am an AI researcher at Example University, focusing on machine learning, computer vision, and data science. My passion is solving real-world problems with advanced algorithms and mentoring the next generation of scientists.
+            </p>
+        </section>
+
+        <section id="research" class="container">
+            <h2>Research Interests</h2>
+            <ul class="research-list">
+                <li>Deep Learning for Medical Imaging</li>
+                <li>Explainable AI</li>
+                <li>Natural Language Processing</li>
+                <li>Robustness in Machine Learning</li>
+            </ul>
+        </section>
+
+        <!-- Study Background Section -->
+        <section id="study-background" class="container">
+            <h2>Study Background</h2>
+            <ul class="project-study-list" id="study-background-list">
+                <!-- Populated by JS -->
+            </ul>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="container">
+            <h2>Projects</h2>
+            <div class="projects-list" id="projects-list">
+                <!-- Populated by JS -->
+            </div>
+        </section>
+
+        <section id="publications" class="container">
+            <h2>Key Publications</h2>
+            <div id="pub-list">
+                <!-- Publications will be loaded here -->
+            </div>
+        </section>
+
+        <section id="contact" class="container">
+            <h2>Contact</h2>
+            <form action="https://api.web3forms.com/submit" method="POST" id="contact">
+                <input type="hidden" name="access_key" value="9d1171eb-2d94-4f1a-9485-7516dc68ec85">
+                <label>Name:</label>
+                <input type="text" name="name" required>
+                <label>Email:</label>
+                <input type="email" name="email" required>
+                <label>Message:</label>
+                <textarea name="message" rows="4" required></textarea>
+                <button type="submit">Send Message</button>
+                <div id="form-msg"></div>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Md. Adnan Hossain. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

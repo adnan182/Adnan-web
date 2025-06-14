@@ -1,0 +1,277 @@
+:root {
+    --main-color: #1746a2;
+    --accent-color: #f7c873;
+    --background: #f5f7fa;
+    --text: #222;
+    --card-bg: #fff;
+    --shadow: 0 2px 12px rgba(23,70,162,0.07);
+}
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: var(--background);
+    color: var(--text);
+}
+
+header {
+    background: var(--main-color);
+    color: #fff;
+    box-shadow: var(--shadow);
+}
+
+.container {
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.profile-img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid var(--accent-color);
+    box-shadow: var(--shadow);
+    background: #fff;
+}
+
+.profile-links {
+    margin-top: 0.5rem;
+    display: flex;
+    gap: 0.7rem;
+}
+
+.btn {
+    display: inline-block;
+    background: var(--accent-color);
+    color: var(--main-color);
+    font-weight: 600;
+    padding: 0.5rem 1.1rem;
+    border-radius: 6px;
+    text-decoration: none;
+    box-shadow: 0 1px 4px rgba(23,70,162,0.07);
+    transition: background 0.2s, color 0.2s;
+    border: none;
+}
+
+.btn:hover, .btn.scholar:hover {
+    background: var(--main-color);
+    color: #fff;
+}
+
+.btn.scholar {
+    background: #fff;
+    color: var(--main-color);
+    border: 1.5px solid var(--accent-color);
+    position: relative;
+}
+
+.btn.scholar::before {
+    content: '';
+    display: inline-block;
+    width: 17px;
+    height: 17px;
+    background: url('https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/googlescholar.svg') no-repeat center/contain;
+    margin-right: 7px;
+    vertical-align: middle;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    color: #fff;
+    font-weight: 500;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: var(--accent-color);
+}
+
+h1, h2 {
+    margin-top: 0;
+    font-weight: 700;
+}
+
+h2 {
+    color: var(--main-color);
+    margin-bottom: 1rem;
+}
+
+section {
+    margin-bottom: 2.5rem;
+    background: var(--card-bg);
+    border-radius: 16px;
+    box-shadow: var(--shadow);
+    padding: 2rem 1.5rem;
+}
+
+.research-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.7rem 1.5rem;
+    padding: 0;
+    margin: 0;
+    list-style: disc inside;
+}
+
+.project-study-list {
+    list-style: disc inside;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem 2rem;
+    padding: 0;
+    margin: 0;
+}
+.project-study-list li {
+    background: #f3f6fc;
+    border-left: 4px solid var(--accent-color);
+    padding: 0.8rem 1rem;
+    border-radius: 8px;
+    margin-bottom: 0.5rem;
+}
+
+.projects-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.project-card {
+    background: #f3f6fc;
+    border-left: 5px solid var(--main-color);
+    padding: 1rem 1.2rem;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 350px;
+    box-sizing: border-box;
+    box-shadow: var(--shadow);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.project-card h3 {
+    margin: 0 0 0.3rem 0;
+    color: var(--main-color);
+}
+
+.project-card p {
+    margin: 0 0 0.5rem 0;
+}
+
+.project-card a {
+    color: var(--main-color);
+    font-weight: 600;
+    text-decoration: underline;
+    margin-top: auto;
+}
+
+#pub-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.publication-card {
+    background: #f3f6fc;
+    border-left: 5px solid var(--main-color);
+    padding: 1rem 1.2rem;
+    border-radius: 8px;
+}
+
+.publication-card strong {
+    color: var(--main-color);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+input, textarea {
+    padding: 0.6rem;
+    border-radius: 6px;
+    border: 1px solid #d2dbe7;
+    font-size: 1rem;
+    background: #fafbfc;
+    transition: border 0.2s;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    border-color: var(--main-color);
+}
+
+button {
+    background: var(--main-color);
+    color: #fff;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+button:hover {
+    background: var(--accent-color);
+    color: var(--main-color);
+}
+
+#form-msg {
+    margin-top: 0.5rem;
+    color: green;
+    font-weight: 500;
+}
+
+footer {
+    text-align: center;
+    padding: 1.5rem 0;
+    font-size: 1rem;
+    color: #777;
+    background: #e4eaf7;
+    margin-top: 2rem;
+    border-top-left-radius: 32px;
+    border-top-right-radius: 32px;
+}
+
+/* Responsive */
+@media (max-width: 700px) {
+    .header-content {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1.5rem;
+    }
+    .research-list,
+    .project-study-list {
+        grid-template-columns: 1fr;
+    }
+    .projects-list {
+        flex-direction: column;
+        gap: 1rem;
+    }
+}
